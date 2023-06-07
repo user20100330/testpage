@@ -1,3 +1,4 @@
 function generate(){
-  documet.getElementById("");
+  documet.getElementById("display");
+  const randmun = Math.floor(Math.random() * 37)
 }
