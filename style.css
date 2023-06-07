@@ -1,3 +1,13 @@
 #display {
   font-size:300%;
 }
+.btn,
+a.btn {
+  color: #fff;
+  background-color: #eb6100;
+}
+.btn:hover,
+a.btn:hover {
+  color: #fff;
+  background: #f56500;
+}
