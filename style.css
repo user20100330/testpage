@@ -15,7 +15,8 @@
 	color: #fff;
 	transition: 0.5s;
 }
-a.btn_02:hover {
+.btn:hover {
 	color: #27acd9;
 	background: #fff;
 }
+
