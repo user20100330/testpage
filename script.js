@@ -2,7 +2,10 @@ function generate(){
   let el = document.getElementById("number");
   const randmun = Math.floor(Math.random() * 37);
   el.innerHTML = randmun;
-  
+  let li = document.getElementById("list");
+  var newli = document.createElement('li');
+  newli.innerHTML = randmun;
+  li.appendChild(newli);
 }
 
 function arrayShuffle(array) {
