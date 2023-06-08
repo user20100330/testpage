@@ -5,6 +5,7 @@ function generate(){
   let li = document.getElementById("list");
   let newli = document.createElement('p');
   newli.innerHTML = randmun
+  newli.classList.add("rireki");
   li.appendChild(newli);
 }
 
