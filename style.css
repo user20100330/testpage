@@ -27,8 +27,10 @@ a.btn {
 }
 #display {
   text-align: center;
+  list-style: none;
+  font-size:150%;
 }
-.rireki {
+/*.rireki {
   font-size:150%;
   maegin-top:-50px;
-}
+}*/
