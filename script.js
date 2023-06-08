@@ -3,7 +3,7 @@ function generate(){
   const randmun = Math.floor(Math.random() * 37);
   el.innerHTML = randmun;
   let li = document.getElementById("list");
-  let newli = document.createElement('li');
+  let newli = document.createElement("p");
   newli.innerHTML = randmun;
   li.appendChild(newli);
 }
