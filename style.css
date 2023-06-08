@@ -26,4 +26,7 @@ a.btn {
 }
 #display {
   text-align: center;
+  width:2048px;
+  height:1536px;
+  background:#101010;
 }
