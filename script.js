@@ -3,9 +3,9 @@ function generate(){
   const randmun = Math.floor(Math.random() * 37);
   el.innerHTML = randmun;
   let li = document.getElementById("list");
-  let newli = document.createElement('li');
-  newli.innerHTML = randmun
-  li.appendChild(newli);
+  //let newli = document.createElement('li');
+  li.innerHTML = li.innerHTML + "&#13;" + randmun;
+  //li.appendChild(newli);
 }
 
 function arrayShuffle(array) {
