@@ -28,3 +28,7 @@ a.btn {
 #display {
   text-align: center;
 }
+#list {
+  font-size:150%;
+  line-height:30px;
+}
