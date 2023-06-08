@@ -3,9 +3,9 @@ function generate(){
   const randmun = Math.floor(Math.random() * 37);
   el.innerHTML = randmun;
   let li = document.getElementById("list");
-  let newli = document.createElement('p');
+  let newli = document.createElement('li');
   newli.innerHTML = randmun
-  newli.classList.add("rireki");
+  /*newli.classList.add("rireki");*/
   li.appendChild(newli);
 }
 
