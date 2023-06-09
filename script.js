@@ -4,7 +4,7 @@ function generate(){
   el.innerHTML = randmun;
   let li = document.getElementById("list");
   //let newli = document.createElement('li');
-  li.innerHTML = li.innerHTML + "&#13;" + randmun;
+  li.innerHTML = li.innerHTML + randmun + "&#13;";
   //li.appendChild(newli);
 }
 
