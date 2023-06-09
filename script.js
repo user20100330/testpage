@@ -20,8 +20,9 @@ window.onload = function(){
   init() //ページロード時にリストを初期化
 }
 function generate(){
+  let num = junban.shift();
   let el = document.getElementById("number");
-  el.innerHTML = junban.shift();
+  el.innerHTML = num
   let li = document.getElementById("list");
-  li.innerHTML = li.innerHTML + randmun + "&#13;";
+  li.innerHTML = li.innerHTML + num + "&#13;";
 }
