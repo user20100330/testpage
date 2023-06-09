@@ -23,5 +23,7 @@ function arrayShuffle(array) {
 }
 function init() {
   for(let i = 1;i < 37;i++){
+    let li = document.getElementById("list")
+    li.innerHTML = li.innerHTML + i + "&#13;";
   }
 }
