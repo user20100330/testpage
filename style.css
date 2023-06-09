@@ -43,7 +43,7 @@ nav {
   width: 100vw;
   height: 70px;
   background-color: dimgray;
-  padding-top: 5px;
+  padding-top: 10px;
   box-sizing: border-box;
 }
 #set {
@@ -51,4 +51,5 @@ nav {
   text-decoration: none;
   color: white;
   margin-right: 35px;
+  font-size:20px;
 }
