@@ -22,7 +22,7 @@ function arrayShuffle(array) {
   return array;
 }
 function init() {
-  let junban = [...Array(5)].map((_, i) => i + 1)
+  let junban = [...Array(37)].map((_, i) => i + 1)
   let li = document.getElementById("list")
   li.innerHTML = junban;
 }
