@@ -39,7 +39,13 @@ a.btn {
   overflow: scroll;
 }
 nav {
-  width: 100%;
+  width: 100vw;
   height: 70px;
   background-color: dimgray;
+}
+#set {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-right: 35px;
 }
