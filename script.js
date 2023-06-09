@@ -22,8 +22,7 @@ function arrayShuffle(array) {
   return array;
 }
 function init() {
-  for(let i = 1;i > 37;i++){
-    let li = document.getElementById("list")
-    li.innerHTML = li.innerHTML + i + "&#13;";
-  }
+  let junban = [...Array(5)].map((_, i) => i + 1)
+  let li = document.getElementById("list")
+  li.innerHTML = junban;
 }
