@@ -22,5 +22,6 @@ function arrayShuffle(array) {
   return array;
 }
 function init() {
-  for(let i = 1;i < 37)
+  for(let i = 1;i < 37;i++){
+  }
 }
