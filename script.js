@@ -1,13 +1,4 @@
-function generate(){
-  let el = document.getElementById("number");
-  const randmun = Math.floor(Math.random() * 37);
-  el.innerHTML = randmun;
-  let li = document.getElementById("list");
-  //let newli = document.createElement('li');
-  li.innerHTML = li.innerHTML + randmun + "&#13;";
-  //li.appendChild(newli);
-}
-
+let junban
 function arrayShuffle(array) {
   for(let i = (array.length - 1); 0 < i; i--){
 
@@ -22,8 +13,15 @@ function arrayShuffle(array) {
   return array;
 }
 function init() {
-  let junban = [...Array(37)].map((_, i) => i + 1);
+  junban = [...Array(37)].map((_, i) => i + 1);
   junban = arrayShuffle(junban);
+}
+window.onload = function(){
+  init() //ページロード時にリストを初期化
+}
+function generate(){
+  let el = document.getElementById("number");
+  el.innerHTML = junban.shift();
   let li = document.getElementById("list");
-  li.innerHTML = junban;
+  li.innerHTML = li.innerHTML + randmun + "&#13;";
 }
