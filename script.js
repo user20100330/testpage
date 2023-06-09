@@ -20,6 +20,9 @@ window.onload = function(){
   init() //ページロード時にリストを初期化
 }
 function generate(){
+  if(){
+    init()
+  }
   let num = junban.shift();
   let el = document.getElementById("number");
   el.innerHTML = num
