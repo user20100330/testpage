@@ -43,6 +43,8 @@ nav {
   width: 100vw;
   height: 70px;
   background-color: dimgray;
+  padding-top: 5px;
+  box-sizing: border-box;
 }
 #set {
   display: block;
