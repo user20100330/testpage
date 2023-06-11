@@ -13,19 +13,21 @@ function arrayShuffle(array) {
   return array;
 }
 function init() {
-  junban = [...Array(37)].map((_, i) => i + 1);
+  junban = [...Array(37)].map((_, i) => i + 1)
   junban = arrayShuffle(junban);
+  let li = document.getElementById("list");
+  li.innerHTML = "";
 }
 window.onload = function(){
   init() //ページロード時にリストを初期化
 }
 function generate(){
-  if(){
+  if(junban.length == 0){
     init()
   }
   let num = junban.shift();
   let el = document.getElementById("number");
-  el.innerHTML = num
   let li = document.getElementById("list");
-  li.innerHTML = li.innerHTML + num + "&#13;";
+  el.innerHTML = ('00' + num).slice(-2);
+  li.innerHTML = li.innerHTML + ('00' + num).slice(-2); + "\n";
 }
