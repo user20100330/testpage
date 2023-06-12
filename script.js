@@ -45,6 +45,7 @@ function animation(){
   const rand = () =>{
     keta =  Math.floor(Math.random() * 37);
     el.innerHTML = keta;
+    count++;
   }
   const intervalId = setInterval(() =>{rand();
   if(count > 20){　
