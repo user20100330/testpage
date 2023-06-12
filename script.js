@@ -23,8 +23,9 @@ window.onload = function(){
 }
 function generate(){
   if(junban.length == 0){
-    init()
+    init();
   }
+  animation();
   let num = junban.shift();
   let el = document.getElementById("number");
   let li = document.getElementById("list");
@@ -34,6 +35,19 @@ function generate(){
 function reset(){
   let ans = window.confirm("リセットしますか？");
   if(ans){
-    init()
+    init();
   }
+}
+function animation(){
+  let el = document.getElementById("number");
+  let keta = 0;
+  let count = 0;
+  const rand = () =>{
+    keta =  Math.floor(Math.random() * 37);
+    el.innerHTML = keta;
+  }
+  const intervalId = setInterval(() =>{rand();
+  if(count > 20){　
+    clearInterval(intervalId);
+  }}, 50);
 }
