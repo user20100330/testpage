@@ -55,3 +55,15 @@ nav {
 #rireki {
   margin-top:-115px;
 }
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+}
+.koumoku {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-right: 35px;
+}
