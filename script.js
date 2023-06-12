@@ -25,20 +25,6 @@ function generate(){
   if(junban.length == 0){
     init();
   }
-  animation();
-  let num = junban.shift();
-  let el = document.getElementById("number");
-  let li = document.getElementById("list");
-  el.innerHTML = ('00' + num).slice(-2);
-  li.innerHTML = li.innerHTML + ('00' + num).slice(-2) + "\n";
-}
-function reset(){
-  let ans = window.confirm("リセットしますか？");
-  if(ans){
-    init();
-  }
-}
-function animation(){
   let el = document.getElementById("number");
   let keta = 0;
   let count = 0;
@@ -51,4 +37,18 @@ function animation(){
   if(count > 20){　
     clearInterval(intervalId);
   }}, 50);
+  let num = junban.shift();
+  let li = document.getElementById("list");
+  el.innerHTML = ('00' + num).slice(-2);
+  li.innerHTML = li.innerHTML + ('00' + num).slice(-2) + "\n";
+}
+function reset(){
+  let ans = window.confirm("リセットしますか？");
+  if(ans){
+    init();
+  }
+}
+function animation(){
+  let el = document.getElementById("number");
+
 }
