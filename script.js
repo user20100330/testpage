@@ -25,6 +25,7 @@ window.onload = function(){
 }
 function generate(){
   let randbtn = document.querySelector(".btn");
+  randbtn.style.background = "bf5000";
   randbtn.setAttribute("href", "javascript:void(0)");
   if(junban.length == 0){
     init();
