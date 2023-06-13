@@ -24,7 +24,8 @@ window.onload = function(){
   init() //ページロード時にリストを初期化
 }
 function generate(){
-  
+  let randbtn = document.querySelector(".btn");
+  randbtn.setAttribute("href", "");
   if(junban.length == 0){
     init();
   }
@@ -41,6 +42,7 @@ function generate(){
     let li = document.getElementById("list");
     el.innerHTML = ('00' + num).slice(-2);
     li.innerHTML = li.innerHTML + ('00' + num).slice(-2) + "\n";
+    randbtn.setAttribute("href", "javascript:generate()");
   }}, 30);
 }
 function reset(){
