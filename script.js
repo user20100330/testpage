@@ -25,7 +25,7 @@ window.onload = function(){
 }
 function generate(){
   let randbtn = document.querySelector(".btn");
-  randbtn.setAttribute("href", "");
+  randbtn.setAttribute("href", "javascript:void(0)");
   if(junban.length == 0){
     init();
   }
