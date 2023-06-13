@@ -24,6 +24,7 @@ window.onload = function(){
   init() //ページロード時にリストを初期化
 }
 function generate(){
+  
   if(junban.length == 0){
     init();
   }
