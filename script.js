@@ -38,7 +38,7 @@ function generate(){
     let li = document.getElementById("list");
     el.innerHTML = ('00' + num).slice(-2);
     li.innerHTML = li.innerHTML + ('00' + num).slice(-2) + "\n";
-  }}, 40);
+  }}, 30);
 }
 function reset(){
   let ans = window.confirm("リセットしますか？");
