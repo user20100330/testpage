@@ -17,6 +17,8 @@ function init() {
   junban = arrayShuffle(junban);
   let li = document.getElementById("list");
   li.innerHTML = "";
+  let el = document.getElementById("number");
+  el.innerHTML = "00";
 }
 window.onload = function(){
   init() //ページロード時にリストを初期化
