@@ -26,21 +26,19 @@ function generate(){
     init();
   }
   let el = document.getElementById("number");
-  let keta = 0;
   let count = 0;
   const rand = () =>{
-    keta =  Math.floor(Math.random() * 37);
-    el.innerHTML = keta;
+    el.innerHTML = Math.floor(Math.random() * 99);
     count++;
   }
   const intervalId = setInterval(() =>{rand();
   if(count > 20){　
     clearInterval(intervalId);
-  }}, 50);
-  let num = junban.shift();
-  let li = document.getElementById("list");
-  el.innerHTML = ('00' + num).slice(-2);
-  li.innerHTML = li.innerHTML + ('00' + num).slice(-2) + "\n";
+    let num = junban.shift();
+    let li = document.getElementById("list");
+    el.innerHTML = ('00' + num).slice(-2);
+    li.innerHTML = li.innerHTML + ('00' + num).slice(-2) + "\n";
+  }}, 40);
 }
 function reset(){
   let ans = window.confirm("リセットしますか？");
