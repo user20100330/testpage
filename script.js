@@ -57,3 +57,9 @@ function animation(){
   let el = document.getElementById("number");
 
 }
+function set(){
+  let me = document.getElementById("menu");
+  let dis = document.getElementById("display");
+  me.style.display = "none";
+  dis.style.display = "none";
+}
