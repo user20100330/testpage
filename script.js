@@ -53,13 +53,15 @@ function reset(){
     init();
   }
 }
-function animation(){
-  let el = document.getElementById("number");
-
-}
 function set(){
   let me = document.getElementById("menu");
   let dis = document.getElementById("display");
   me.style.display = "none";
   dis.style.display = "none";
 }
+let maxnum = document.getElementById("max");
+maxnum.addEventListener("change", function() {
+  if(isNaN(maxnum.value)){
+    maxnum.style.outline = "solid 2px red"
+  } else if
+}, false);
