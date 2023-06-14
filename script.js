@@ -27,13 +27,13 @@ window.onload = function(){
     if(isNaN(maxnum.value)){
       maxnum.style.outline = "solid 2px red"
       maxnum.innerHTML = "";
-    } else if(maxnum.value >= 1 && maxnum.value <= 99)
+    } else if(maxnum.value >= 1 && maxnum.value <= 99) {
       maxnum.style.outline = "solid 2px blue"
     } else {
       maxnum.style.outline = "solid 2px red"
       maxnum.innerHTML = "";
     }
-}, false);
+  }, false);
 }
 function generate(){
   let randbtn = document.querySelector(".btn");
