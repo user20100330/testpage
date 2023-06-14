@@ -30,11 +30,15 @@ window.onload = function(){
     } else if(maxnum.value >= 1 && maxnum.value <= 99) {
       maxnum.style.outline = "solid 2px blue"
       let checks = document.getElementsByClassName('checks');
-      if(checks.length == maxnum.value){
-        let newel = document.createElement("input");
-        newel.type = "checkbox";
+      if(!checks.length == maxnum.value){
+        let la;
+        let checkbox;
         for(let i=1;i < maxnum.value;i++;){
-          
+          la = document.createElement("label");
+          la.innerText = i;
+          checkbox = document.createElement("input");
+          checkbox.setAttribute("type", "checkbox");
+          la.appendChild(checkbox);
         }
       }
     } else {
