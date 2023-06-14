@@ -29,6 +29,12 @@ window.onload = function(){
       maxnum.innerHTML = "";
     } else if(maxnum.value >= 1 && maxnum.value <= 99) {
       maxnum.style.outline = "solid 2px blue"
+      let checks = document.getElementsByClassName('checks');
+      if(checks.length == maxnum.value){
+        for(let i=1;i < maxnum.value;i++){
+          
+        }
+      }
     } else {
       maxnum.style.outline = "solid 2px red"
       maxnum.innerHTML = "";
