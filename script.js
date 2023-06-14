@@ -23,7 +23,7 @@ function init() {
 window.onload = function(){
   init() //ページロード時にリストを初期化
   let maxnum = document.getElementById("max");
-  maxnum.addEventListener("change", function() {
+  maxnum.addEventListener("input", function() {
     if(isNaN(maxnum.value)){
       maxnum.style.outline = "solid 2px red"
       maxnum.innerHTML = "";
