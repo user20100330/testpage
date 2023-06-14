@@ -71,3 +71,11 @@ function set(){
   me.style.display = "none";
   dis.style.display = "none";
 }
+function setstop(){
+  let me = document.getElementById("menu");
+  let dis = document.getElementById("display");
+  me.style.display = "block";
+  dis.style.display = "block";
+  let set = document.getElementById("set");
+  set.style.display = "none";
+}
