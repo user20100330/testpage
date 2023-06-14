@@ -63,5 +63,9 @@ let maxnum = document.getElementById("max");
 maxnum.addEventListener("change", function() {
   if(isNaN(maxnum.value)){
     maxnum.style.outline = "solid 2px red"
-  } else if
+  } else if(maxnum.value >= 1 && maxnum.value <= 99){
+    maxnum.style.outline = "solid 2px blue"
+  } else {
+    maxnum.style.outline = "solid 2px red"
+  }
 }, false);
