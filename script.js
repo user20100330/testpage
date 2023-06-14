@@ -31,7 +31,9 @@ window.onload = function(){
       maxnum.style.outline = "solid 2px blue"
       let checks = document.getElementsByClassName('checks');
       if(checks.length == maxnum.value){
-        for(let i=1;i < maxnum.value;i++){
+        let newel = document.createElement("input");
+        newel.type = "checkbox";
+        for(let i=1;i < maxnum.value;i++;){
           
         }
       }
