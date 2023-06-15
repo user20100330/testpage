@@ -33,12 +33,14 @@ window.onload = function(){
       if(!checks.length == maxnum.value){
         let la;
         let checkbox;
+        let nonum = document.getElementById("nonum");
         for(let i=1;i < maxnum.value;i++;){
           la = document.createElement("label");
           la.innerText = i;
           checkbox = document.createElement("input");
           checkbox.setAttribute("type", "checkbox");
           la.appendChild(checkbox);
+          nonum.appendChild(la);
         }
       }
     } else {
