@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
  <head>
- <meta charset="utf-8">
- <title>乱数</title>
-  <script type="text/javascript" src="script.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
+	 <meta charset="utf-8">
+	 <title>乱数</title>
+	 <script type="text/javascript" src="script.js"></script>
+	 <link rel="stylesheet" type="text/css" href="style.css">
  </head>
  <body>
   <nav id="menu">
@@ -14,14 +14,15 @@
    </ul>
   </nav>
   <div id="display">
-   <a href="javascript:generate()" class="btn">乱数生成</a>
-   <p id="number">00</p>
-   <p id="rireki">履歴</p>
-   <textarea readonly id="list"></textarea>
+		<a href="javascript:generate()" class="btn">乱数生成</a>
+		<p id="number">00</p>
+		<p id="rireki">履歴</p>
+		<textarea readonly id="list"></textarea>
   </div>
-  <div id="set">
-   <input type="number" id="max"><br>
-   <a href="javascript:setstop()" id="stop">設定する</a>
-  </div>
+	 <div id="set">
+		 <input type="number" id="max"><br>
+		 <div id="nonum"></div>
+		 <a href="javascript:setstop()" id="stop">設定する</a>
+	 </div>
  </body>
 </html>
