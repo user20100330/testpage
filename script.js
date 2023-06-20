@@ -33,7 +33,7 @@ window.onload = function(){
       if(checks.length !== maxnum.value){
         let nonum = document.getElementById("nonum");
         let la = document.createElement("label");
-        la.innerHTML = i;
+        la.innerHTML = 1;
         let checkbox = document.createElement("input");
         checkbox.setAttribute("type", "checkbox");
         checkbox.setAttribute("class", "checks");
