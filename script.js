@@ -31,16 +31,7 @@ window.onload = function(){
       maxnum.style.outline = "solid 2px blue"
       let checks = document.getElementsByClassName('checks');
       if(checks.length !== maxnum.value){
-        let nonum = document.getElementById("nonum");
-        let la = document.createElement("label");
-        la.setAttribute("for", "1");
-        la.innerText = "1";
-        let checkbox = document.createElement("input");
-        checkbox.setAttribute("type", "checkbox");
-        checkbox.setAttribute("class", "checks");
-        checkbox.setAttribute("id", "1");
-        nonum.appendChild(checkbox);
-        nonum.appendChild(la);
+        for 
       }
     } else {
       maxnum.style.outline = "solid 2px red"
@@ -93,4 +84,18 @@ function setstop(){
   dis.style.display = "block";
   let set = document.getElementById("set");
   set.style.display = "none";
+}
+function createcheck(i){
+  let nonum = document.getElementById("nonum");
+  let la = document.createElement("label");
+  let br = document.createElement("br");
+  la.setAttribute("for", i);
+  la.innerText = i;
+  let checkbox = document.createElement("input");
+  checkbox.setAttribute("type", "checkbox");
+  checkbox.setAttribute("class", "checks");
+  checkbox.setAttribute("id", i);
+  nonum.appendChild(checkbox);
+  nonum.appendChild(la);
+  nonum.appendChild(br);
 }
