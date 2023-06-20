@@ -34,7 +34,7 @@ window.onload = function(){
         let nonum = document.getElementById("nonum");
         let la = document.createElement("label");
         la.setAttribute("for", "1");
-        la.innerText = 1;
+        la.innerText = "1";
         let checkbox = document.createElement("input");
         checkbox.setAttribute("type", "checkbox");
         checkbox.setAttribute("class", "checks");
