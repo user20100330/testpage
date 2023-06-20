@@ -35,10 +35,10 @@ window.onload = function(){
         let checkbox;
         let nonum = document.getElementById("nonum");
         la = document.createElement("label");
-        la.innerText = i;
+        la.innerHTML = i;
         checkbox = document.createElement("input");
         checkbox.setAttribute("type", "checkbox");
-        la.appendChild(checkbox);
+        checkbox.setAttribute("class", "");
         nonum.appendChild(la);
       }
     } else {
