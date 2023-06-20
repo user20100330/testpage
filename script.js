@@ -34,7 +34,9 @@ window.onload = function(){
       var clone = nonum.cloneNode( false );
       nonum.parentNode.replaceChild( clone , nonum );
       if(checks.length !== maxnum.value){
-        for 
+        for(i=1;i<checks.length;i++){
+          createcheck(i);
+        }
       }
     } else {
       maxnum.style.outline = "solid 2px red"
