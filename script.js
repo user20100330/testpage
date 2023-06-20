@@ -31,15 +31,14 @@ window.onload = function(){
       maxnum.style.outline = "solid 2px blue"
       let checks = document.getElementsByClassName('checks');
       if(checks.length !== maxnum.value){
-        let la;
-        let checkbox;
         let nonum = document.getElementById("nonum");
-        la = document.createElement("label");
+        let la = document.createElement("label");
         la.innerHTML = i;
-        checkbox = document.createElement("input");
+        let checkbox = document.createElement("input");
         checkbox.setAttribute("type", "checkbox");
-        checkbox.setAttribute("class", "");
+        checkbox.setAttribute("class", "checks");
         nonum.appendChild(la);
+        nonum.appendChild(checkbox);
       }
     } else {
       maxnum.style.outline = "solid 2px red"
