@@ -34,6 +34,7 @@ window.onload = function(){
         for(i=0;i<maxnum.value;i++){
           createcheck(i+1);
         }
+      }
     } else {
       maxnum.style.outline = "solid 2px red"
       maxnum.innerHTML = "";
