@@ -24,7 +24,7 @@ window.onload = function(){
   init() //ページロード時にリストを初期化
   let maxnum = document.getElementById("max");
   maxnum.addEventListener("input", function() {
-    if(maxnum.isInteger(maxnum.value) && maxnum.value >= 1 && maxnum.value <= 99) {
+    if(Number.isInteger(maxnum.value) && maxnum.value >= 1 && maxnum.value <= 99) {
       maxnum.style.outline = "solid 2px blue"
       let checks = document.getElementsByClassName("checks");
       let nonum = document.getElementById("nonum");
