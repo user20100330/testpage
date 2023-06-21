@@ -34,7 +34,7 @@ window.onload = function(){
       let clone = nonum.cloneNode( false );
       nonum.parentNode.replaceChild( clone , nonum );
       if(checks.length !== maxnum.value){
-        for(i=1;i<maxnum.value+1;i++){
+        for(i=1;i<(maxnum.value+1);i++){
           createcheck(i);
         }
       }
