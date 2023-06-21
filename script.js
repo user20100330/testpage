@@ -31,7 +31,7 @@ window.onload = function(){
       maxnum.style.outline = "solid 2px blue"
       let checks = document.getElementsByClassName('checks');
       let nonum = document.getElementById("nonum");
-      var clone = nonum.cloneNode( false );
+      let clone = nonum.cloneNode( false );
       nonum.parentNode.replaceChild( clone , nonum );
       if(checks.length !== maxnum.value){
         for(i=1;i<checks.length;i++){
