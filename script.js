@@ -1,7 +1,6 @@
-let junban
+let junban;
 function arrayShuffle(array) {
   for(let i = (array.length - 1); 0 < i; i--){
-
     // 0〜(i+1)の範囲で値を取得
     let r = Math.floor(Math.random() * (i + 1));
 
@@ -13,7 +12,7 @@ function arrayShuffle(array) {
   return array;
 }
 function init() {
-  junban = [...Array(37)].map((_, i) => i + 1)
+  junban = [...Array(37)].map((_, i) => i + 1);
   junban = arrayShuffle(junban);
   let li = document.getElementById("list");
   li.innerHTML = "";
@@ -21,11 +20,11 @@ function init() {
   el.innerHTML = "00";
 }
 window.onload = function(){
-  init() //ページロード時にリストを初期化
+  init(); //ページロード時にリストを初期化
   let maxnum = document.getElementById("max");
   maxnum.addEventListener("input", function() {
     if(maxnum.value.includes(".") && maxnum.value >= 1 && maxnum.value <= 99) {
-      maxnum.style.outline = "solid 2px blue"
+      maxnum.style.outline = "solid 2px blue";
       let checks = document.getElementsByClassName("checks");
       let nonum = document.getElementById("nonum");
       let clone = nonum.cloneNode( false );
@@ -36,7 +35,7 @@ window.onload = function(){
         }
       }
     } else {
-      maxnum.style.outline = "solid 2px red"
+      maxnum.style.outline = "solid 2px red";
       maxnum.innerHTML = "";
     }
   }, false);
