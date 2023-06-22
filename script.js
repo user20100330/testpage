@@ -22,15 +22,16 @@ function init() {
 window.onload = function(){
   init(); //ページロード時にリストを初期化
   let maxnum = document.getElementById("max");
+  let maxnumvalue = Number(maxnum.value);
   maxnum.addEventListener("input", function() {
-    if(maxnum.value.includes(".") && maxnum.value >= 1 && maxnum.value <= 99) {
+    if(Number.isInteger(maxnumvalue) && maxnumvalue >= 1 && maxnumvalue <= 99) {
       maxnum.style.outline = "solid 2px blue";
       let checks = document.getElementsByClassName("checks");
       let nonum = document.getElementById("nonum");
       let clone = nonum.cloneNode( false );
       nonum.parentNode.replaceChild( clone , nonum );
-      if(checks.length !== maxnum.value){
-        for(i=0;i<maxnum.value;i++){
+      if(checks.length !== maxnumvalue){
+        for(i=0;i<maxnumvalue;i++){
           createcheck(i+1);
         }
       }
