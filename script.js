@@ -22,9 +22,9 @@ function init() {
 window.onload = function(){
   init(); //ページロード時にリストを初期化
   let maxnum = document.getElementById("max");
-  let maxnumvalue = Number(maxnum.value);
   maxnum.addEventListener("input", function() {
-    if(maxnumvalue >= 1 && maxnumvalue <= 99) {
+    let maxnumvalue = parseFloat(maxnum.value);
+    if(Number.isInteger(maxnumvalue) && maxnumvalue >= 1 && maxnumvalue <= 99) {
       maxnum.style.outline = "solid 2px blue";
       let checks = document.getElementsByClassName("checks");
       let nonum = document.getElementById("nonum");
