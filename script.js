@@ -80,6 +80,19 @@ function setstop(){
   dis.style.display = "block";
   let set = document.getElementById("set");
   set.style.display = "none";
+  
+  let checks = document.getElementsByClassName('checks'); //ここから設定内容を取得
+  let maxnum = document.getElementById("max"); //スライダーを取得
+  if(window.confirm("リセットされますがよろしいですか？")){
+    init()
+    for ( i = 0; maxnum.value; i++) {
+      if ( checks[i].checked === true ) {
+        checks[i].value
+      }
+    }
+  } else{
+    set();
+  }
 }
 function createcheck(i){
   let nonum = document.getElementById("nonum");
@@ -91,6 +104,7 @@ function createcheck(i){
   checkbox.setAttribute("type", "checkbox");
   checkbox.setAttribute("class", "checks");
   checkbox.setAttribute("id", i);
+  checkbox.setAttribute("value", i);
   nonum.appendChild(checkbox);
   nonum.appendChild(la);
   nonum.appendChild(br);
