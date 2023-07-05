@@ -69,6 +69,9 @@ function set(){
   dis.style.display = "none";
   let set = document.getElementById("set");
   set.style.display = "block";
+  let nonum = document.getElementById("nonum");
+  let clone = nonum.cloneNode( false );
+  nonum.parentNode.replaceChild( clone , nonum );
   for(i=0;i<maxnum.value;i++){
     createcheck(i+1);
   }
