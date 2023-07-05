@@ -69,6 +69,9 @@ function set(){
   dis.style.display = "none";
   let set = document.getElementById("set");
   set.style.display = "block";
+  for(i=0;i<maxnum.value;i++){
+    createcheck(i+1);
+  }
 }
 function setstop(){
   let me = document.getElementById("menu");
