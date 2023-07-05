@@ -69,6 +69,7 @@ function set(){
   dis.style.display = "none";
   let set = document.getElementById("set");
   set.style.display = "block";
+  let maxnum = document.getElementById("max");
   let nonum = document.getElementById("nonum");
   let clone = nonum.cloneNode( false );
   nonum.parentNode.replaceChild( clone , nonum );
