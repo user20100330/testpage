@@ -76,22 +76,19 @@ function set(){
 function setstop(){
   let me = document.getElementById("menu");
   let dis = document.getElementById("display");
-  me.style.display = "block";
-  dis.style.display = "block";
   let set = document.getElementById("set");
-  set.style.display = "none";
-  
   let checks = document.getElementsByClassName('checks'); //ここから設定内容を取得
   let maxnum = document.getElementById("max"); //スライダーを取得
   if(window.confirm("リセットされますがよろしいですか？")){
-    init()
+    me.style.display = "block"; //表示を戻す
+    dis.style.display = "block";
+    set.style.display = "none";
+    init() //いったん初期化
     for ( i = 0; maxnum.value; i++) {
       if ( checks[i].checked === true ) {
         checks[i].value
       }
     }
-  } else{
-    set();
   }
 }
 function createcheck(i){
