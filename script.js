@@ -22,7 +22,7 @@ function init() {
 window.onload = function(){
   init(); //ページロード時にリストを初期化
   let maxnum = document.getElementById("max");
-  for(i=0;i<maxnum.value;i++){
+  for(i=0;i<37;i++){
     createcheck(i+1);
   }
   maxnum.addEventListener("input", function() {
