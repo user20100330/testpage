@@ -23,6 +23,7 @@ window.onload = function(){
   init(); //ページロード時にリストを初期化
   let maxnum = document.getElementById("max");
   maxnum.addEventListener("input", function() {
+    document.getElementById("maxdis").innerHTML = "最大値:" + maxnum.value
     let nonum = document.getElementById("nonum");
     let clone = nonum.cloneNode( false );
     nonum.parentNode.replaceChild( clone , nonum );
