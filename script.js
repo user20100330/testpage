@@ -74,7 +74,7 @@ function set(){
   let clone = nonum.cloneNode( false );
   nonum.parentNode.replaceChild( clone , nonum );
   let checks = document.getElementsByClassName("checks");
-  if(checks.length == maxnum.value){
+  if(checks.length !== maxnum.value){
     for(i=0;i<maxnum.value;i++){
       createcheck(i+1);
     }
