@@ -22,6 +22,9 @@ function init() {
 window.onload = function(){
   init(); //ページロード時にリストを初期化
   let maxnum = document.getElementById("max");
+  for(i=0;i<maxnum.value;i++){
+    createcheck(i+1);
+  }
   maxnum.addEventListener("input", function() {
     document.getElementById("maxdis").innerHTML = "最大値:" + maxnum.value
     let nonum = document.getElementById("nonum");
@@ -69,16 +72,6 @@ function set(){
   dis.style.display = "none";
   let set = document.getElementById("set");
   set.style.display = "block";
-  let maxnum = document.getElementById("max");
-  let nonum = document.getElementById("nonum");
-  let clone = nonum.cloneNode( false );
-  nonum.parentNode.replaceChild( clone , nonum );
-  let checks = document.getElementsByClassName("checks");
-  if(checks.length !== maxnum.value){
-    for(i=0;i<maxnum.value;i++){
-      createcheck(i+1);
-    }
-  }
 }
 function setstop(){
   let me = document.getElementById("menu");
