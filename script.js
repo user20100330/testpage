@@ -85,10 +85,10 @@ function setstop(){
     dis.style.display = "block";
     set.style.display = "none";
     init() //いったん初期化
-    let item;
-    for ( i = 0; maxnum.value; i++) {
+    let sakujo;
+    for ( i = 0; i < maxnum.value; i++) {
       if ( checks[i].checked === true ) {
-        item = junban.filter(item => item.match(i));
+        sakujo = junban.filter(item => item.match(i));
       }
     }
   }
