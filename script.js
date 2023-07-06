@@ -12,7 +12,8 @@ function arrayShuffle(array) {
   return array;
 }
 function init() {
-  junban = [...Array(37)].map((_, i) => i + 1);
+  let maxnum = document.getElementById("max"); //スライダーを取得
+  junban = [...Array(37)].map((_, i) => maxnum.value + 1);
   junban = arrayShuffle(junban);
   let li = document.getElementById("list");
   li.innerHTML = "";
@@ -84,9 +85,10 @@ function setstop(){
     dis.style.display = "block";
     set.style.display = "none";
     init() //いったん初期化
+    let item;
     for ( i = 0; maxnum.value; i++) {
       if ( checks[i].checked === true ) {
-        checks[i].value
+        item = junban.filter(item => item.match(i));
       }
     }
   }
@@ -101,7 +103,6 @@ function createcheck(i){
   checkbox.setAttribute("type", "checkbox");
   checkbox.setAttribute("class", "checks");
   checkbox.setAttribute("id", i);
-  checkbox.setAttribute("value", i);
   nonum.appendChild(checkbox);
   nonum.appendChild(la);
   nonum.appendChild(br);
