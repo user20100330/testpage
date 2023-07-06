@@ -13,7 +13,7 @@ function arrayShuffle(array) {
 }
 function init() {
   let maxnum = document.getElementById("max"); //スライダーを取得
-  junban = [...Array(37)].map((_, i) => maxnum.value + 1);
+  junban = [...Array(maxnum.value)].map((_, i) => i + 1);
   junban = arrayShuffle(junban);
   let li = document.getElementById("list");
   li.innerHTML = "";
